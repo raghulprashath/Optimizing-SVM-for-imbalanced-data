@@ -6,7 +6,7 @@ import seaborn as sns
 from sklearn.model_selection import train_test_split
 from sklearn.svm import SVC
 
-df = pd.read_csv('C:/Users/sivaram/Downloads/winequality-white.csv', sep=';')
+df = pd.read_csv('./winequality-white.csv', sep=';')
 print(df.head())
 
 df['quality'][df['quality']!=3] = 0
